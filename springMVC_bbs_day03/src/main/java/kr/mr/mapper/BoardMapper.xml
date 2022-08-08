@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.mr.mapper.BoardMapper">
+  <select id="getList" resultType="BoardVO">
+    select * from tbl_board
+  </select>
+  
+  <insert id="insert" parameterType="BoardVO">
+  </insert>
+  
+  <select id="view" parameterType="Integer" resultType="BoardVO">
+  </select>
+  
+  <delete id="delete" parameterType="Integer">
+  </delete>
+  
+  <update id="update" parameterType="BoardVO"
+  ></update>
+  
+</mapper>
